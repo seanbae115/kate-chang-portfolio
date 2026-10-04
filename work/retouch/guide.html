@@ -1,0 +1,56 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Juniper Lane Image Standards</title>
+<link rel="stylesheet" href="../juniper.css">
+<style>
+body{width:1600px;height:820px;background:var(--cream);padding:54px 64px;display:grid;grid-template-rows:auto 1fr;gap:30px}
+.top{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2px solid var(--plum);padding-bottom:18px}
+h1{font-family:Georgia,serif;font-size:42px;color:var(--plum)}
+.top p{color:var(--muted);font-size:17px;margin-top:4px}
+.grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:28px;min-height:0}
+.card{background:#fff;border-radius:10px;padding:24px;box-shadow:0 4px 14px rgba(74,44,61,.06)}
+h2{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--terra);margin-bottom:14px}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ba div{background:#f1ede8;border-radius:6px;height:360px;display:grid;place-items:center;position:relative}
+.ba span{position:absolute;top:10px;left:10px;font-size:12px;font-weight:700;letter-spacing:.12em;background:#fff;padding:3px 8px;border-radius:3px}
+.fix{margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:6px 18px;font-size:14px}
+.fix b{color:var(--plum)}
+.spec div{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:9px 0;font-size:15px}
+.spec span{color:var(--muted)}
+ul.ck{list-style:none;font-size:15px;line-height:1.5}
+ul.ck li{padding:7px 0 7px 30px;position:relative;border-bottom:1px solid var(--line)}
+ul.ck li:before{content:"";position:absolute;left:0;top:10px;width:16px;height:16px;border-radius:4px;border:2px solid var(--sage)}
+ul.ck li.ok:before{background:var(--sage)}
+.crop{background:#f1ede8;border-radius:6px;height:330px;position:relative;margin-bottom:16px}
+</style></head><body>
+<div class="top"><div><h1>E-commerce image &amp; retouching standards</h1><p>One guide for studio, retouching and vendors, so every product page looks like the same brand.</p></div>
+<div class="jl" style="font-size:26px;color:var(--plum)">juniper <i>lane</i></div></div>
+<div class="grid">
+  <div class="card"><h2>Retouch: before / after</h2>
+    <div class="ba">
+      <div><span>BEFORE</span><img src="../flats/dress_tiered_terra_before.svg" alt="" style="height:330px"></div>
+      <div><span style="color:var(--sage)">AFTER</span><img src="../flats/dress_tiered_terra.svg" alt="" style="height:330px"></div>
+    </div>
+    <div class="fix"><div><b>1.</b> Remove wrinkles &amp; lint</div><div><b>2.</b> Match color to physical swatch</div><div><b>3.</b> Clean background to #F7F4F0</div><div><b>4.</b> Remove mannequin, rebuild neckline</div><div><b>5.</b> Even hem &amp; symmetry</div><div><b>6.</b> Keep fabric texture, no plastic skin</div></div>
+  </div>
+  <div class="card"><h2>Crop &amp; spec</h2>
+    <div class="crop"><svg viewBox="0 0 300 312" width="100%" height="100%">
+      <rect x="45" y="10" width="210" height="280" fill="#fff" stroke="#C4572E" stroke-dasharray="5 4"/>
+      <line x1="45" y1="34" x2="255" y2="34" stroke="#8A9A7B"/><line x1="45" y1="266" x2="255" y2="266" stroke="#8A9A7B"/>
+      <image href="../flats/dress_tiered_terra.svg" x="68" y="28" width="164" height="246"/>
+      <text x="262" y="38" font-size="11" fill="#7A6A70">top 8%</text><text x="262" y="270" font-size="11" fill="#7A6A70">btm 8%</text><text x="120" y="304" font-size="11" fill="#7A6A70">3:4 · centered</text></svg></div>
+    <div class="spec"><div>Ratio<span>3:4 portrait</span></div><div>Size<span>2400 × 3200 px</span></div><div>Background<span>#F7F4F0</span></div><div>Color<span>sRGB, embedded</span></div><div>Format<span>JPG 85% · &lt; 800 KB</span></div><div>Naming<span>STYLE_COLOR_VIEW.jpg</span></div></div>
+  </div>
+  <div class="card"><h2>QC checklist before upload</h2>
+    <ul class="ck">
+      <li class="ok">Color matches approved swatch under D65</li>
+      <li class="ok">Same model pose set across all sizes</li>
+      <li class="ok">Extended sizes shot on a model in that size</li>
+      <li class="ok">No dust, lint, tags or pins visible</li>
+      <li class="ok">Print scale correct for the grade</li>
+      <li>Alt view set: front, back, side, detail</li>
+      <li>File named and placed in DAM folder</li>
+      <li>Approved by merch before go-live</li>
+    </ul>
+    <p style="font-size:13px;color:var(--muted);margin-top:16px;line-height:1.45">Garments are illustrated for this guide. Studio photography follows the same rules.</p>
+  </div>
+</div>
+</body></html>

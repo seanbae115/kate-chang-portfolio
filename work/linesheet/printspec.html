@@ -1,0 +1,112 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Juniper Lane In-Store Print Spec</title>
+<link rel="stylesheet" href="../juniper.css">
+<style>
+@page{size:11in 8.5in;margin:0}
+html,body{width:11in;height:8.5in}
+body{background:#fff;padding:.42in .45in;display:grid;grid-template-rows:auto 1fr auto;gap:.18in;font-size:10.5px}
+.hd{display:grid;grid-template-columns:1.6fr repeat(4,1fr);border:1.5px solid var(--ink)}
+.hd div{padding:6px 9px;border-left:1px solid var(--line)}.hd div:first-child{border-left:none;background:var(--plum);color:#fff}
+.hd small{display:block;font-size:8.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}.hd div:first-child small{color:var(--blush)}
+.hd b{font-size:13px}
+.main{display:grid;grid-template-columns:1fr 1fr;gap:.25in;min-height:0;align-items:start}
+.piece{border:1px solid var(--line);padding:.15in;display:grid;grid-template-columns:auto 1fr;gap:.18in;align-items:start;align-content:start}
+.piece h3{grid-column:1/-1;font-size:13px;display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:6px}
+.piece h3 span{color:var(--muted);font-weight:400;font-size:11px}
+table{width:100%;border-collapse:collapse;font-size:10.5px}
+td{border-bottom:1px solid var(--line);padding:4px 0;vertical-align:top}
+td:first-child{color:var(--muted);width:38%;padding-right:8px}
+.leg{display:flex;gap:12px;font-size:9px;color:var(--muted);margin-top:6px;flex-wrap:wrap}
+.leg i{display:inline-block;width:14px;height:0;border-top:1.5px solid;vertical-align:middle;margin-right:4px}
+.notes{grid-column:1/-1;font-size:10px;line-height:1.45;margin-top:.1in}
+.notes li{margin:0 0 2px 14px}
+.ft{display:grid;grid-template-columns:repeat(4,1fr) 1.4fr;border:1.5px solid var(--ink)}
+.ft div{padding:6px 9px;border-left:1px solid var(--line);height:.55in}.ft div:first-child{border-left:none}
+.ft small{display:block;font-size:8.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.stamp{color:var(--terra);font-weight:700;font-size:12px;border:2px solid var(--terra);display:inline-block;padding:2px 8px;transform:rotate(-3deg);margin-top:3px}
+</style></head><body>
+<div class="hd">
+  <div><small>Print specification</small><b>Desert Bloom · In-store kit</b></div>
+  <div><small>Job #</small><b>JL-SP27-INS-01</b></div>
+  <div><small>Stores</small><b>142 doors</b></div>
+  <div><small>In-store date</small><b>Feb 03, 2027</b></div>
+  <div><small>Revision</small><b>R1 · 10/04/26</b></div>
+</div>
+
+<div class="main">
+  <!-- Poster -->
+  <div class="piece">
+    <h3>A · Window poster <span>24 × 36 in · portrait</span></h3>
+    <div>
+      <svg viewBox="0 0 170 245" width="1.75in">
+        <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2b880"/><stop offset=".6" stop-color="#c4572e"/><stop offset="1" stop-color="#4a2c3d"/></linearGradient></defs>
+        <rect x="0" y="0" width="170" height="245" fill="url(#g)"/>
+        <circle cx="85" cy="80" r="34" fill="#fbd9a6"/>
+        <path d="M0 175 L40 150 L75 168 L110 140 L145 160 L170 150 V245 H0Z" fill="#3a2230"/>
+        <text x="85" y="190" text-anchor="middle" font-family="Georgia" font-size="20" fill="#fff">Desert Bloom</text>
+        <rect x="5" y="5" width="160" height="235" fill="none" stroke="#2B2024" stroke-width="1"/>
+        <rect x="14" y="14" width="142" height="217" fill="none" stroke="#2bb3c0" stroke-width="1" stroke-dasharray="4 3"/>
+        <rect x=".5" y=".5" width="169" height="244" fill="none" stroke="#e0245e" stroke-width="1"/>
+      </svg>
+      <div class="leg"><span><i style="border-color:#e0245e"></i>Bleed</span><span><i style="border-color:#2B2024"></i>Trim</span><span><i style="border-color:#2bb3c0;border-top-style:dashed"></i>Safe</span></div>
+    </div>
+    <table>
+      <tr><td>Trim size</td><td>24 × 36 in</td></tr>
+      <tr><td>Bleed / safe</td><td>0.125 in / 0.75 in</td></tr>
+      <tr><td>Stock</td><td>10 pt C2S, satin</td></tr>
+      <tr><td>Print</td><td>4/0 CMYK, 1 side</td></tr>
+      <tr><td>Install</td><td>Inside window, face-out · clear removable adhesive dots</td></tr>
+      <tr><td>Quantity</td><td>142 + 10 overs = 152</td></tr>
+      <tr><td>File</td><td>JL_SP27_WindowPoster_24x36_R1.pdf</td></tr>
+    </table>
+    <ul class="notes"><li>Keep logo and headline inside safe area. Window frames hide up to 0.5 in.</li><li>Rich black for type: 60/40/40/100. Sunset gradient checked for banding on hard proof.</li></ul>
+  </div>
+
+  <!-- Table tent -->
+  <div class="piece">
+    <h3>B · Fitting-room table tent <span>4 × 6 in finished · folded</span></h3>
+    <div>
+      <svg viewBox="0 0 120 245" width="1.25in">
+        <rect x="0" y="0" width="120" height="245" fill="#fbf7f2" stroke="#e6dacd"/>
+        <rect x="0" y="0" width="120" height="110" fill="#c4572e"/>
+        <circle cx="88" cy="38" r="18" fill="#fbd9a6"/>
+        <path d="M0 85 L30 72 L55 82 L85 66 L120 78 V110 H0Z" fill="#4a2c3d"/>
+        <rect x="0" y="122" width="120" height="8" fill="#e6dacd"/>
+        <line x1="0" y1="122.5" x2="120" y2="122.5" stroke="#2B2024" stroke-dasharray="6 3"/>
+        <text x="60" y="140" text-anchor="middle" font-size="7" fill="#7A6A70">fold</text>
+        <rect x="14" y="170" width="28" height="28" fill="#2B2024"/><rect x="18" y="174" width="20" height="20" fill="#fff"/><rect x="22" y="178" width="12" height="12" fill="#2B2024"/>
+        <rect x="50" y="176" width="56" height="5" fill="#4a2c3d"/><rect x="50" y="186" width="44" height="4" fill="#b9a99e"/>
+      </svg>
+      <div class="leg"><span><i style="border-color:#2B2024;border-top-style:dashed"></i>Score / fold</span></div>
+    </div>
+    <table>
+      <tr><td>Flat size</td><td>4 × 12.25 in (two 6 in panels + 0.25 in base)</td></tr>
+      <tr><td>Finished</td><td>4 × 6 in, self-standing</td></tr>
+      <tr><td>Bleed / safe</td><td>0.125 in / 0.25 in</td></tr>
+      <tr><td>Stock</td><td>14 pt C2S, matte aqueous</td></tr>
+      <tr><td>Print</td><td>4/4 CMYK · score at 6 in and 12 in</td></tr>
+      <tr><td>Quantity</td><td>142 doors × 4 = 568 + 32 overs</td></tr>
+      <tr><td>File</td><td>JL_SP27_TableTent_4x6_R1.pdf</td></tr>
+    </table>
+    <ul class="notes"><li>QR minimum 0.8 in with 0.1 in quiet zone. Test scan on proof before approval.</li><li>Both panels printed upright when folded; back panel rotated 180° in the flat file.</li></ul>
+  </div>
+  <div class="piece" style="grid-column:1/-1;grid-template-columns:1fr 1fr 1.2fr;gap:.3in">
+    <h3>C · Kitting &amp; delivery <span>one kit per store</span></h3>
+    <table><tr><td>Kit contents</td><td>1 window poster (rolled, tube)<br>4 table tents (flat, pre-scored)<br>1 install instruction card</td></tr>
+      <tr><td>Labeling</td><td>Store # + "SP27 Desert Bloom" on tube and envelope</td></tr></table>
+    <table><tr><td>Hard proof</td><td>Dec 18 · color checked to approved swatches</td></tr>
+      <tr><td>Print complete</td><td>Jan 08</td></tr>
+      <tr><td>Arrive at DC</td><td>Jan 15 · ships with store replenishment</td></tr>
+      <tr><td>Install</td><td>Feb 02, after close</td></tr></table>
+    <div style="font-size:10px;line-height:1.5"><b style="font-size:9px;letter-spacing:.12em;text-transform:uppercase">Approval checklist</b>
+      <ul class="notes" style="margin-top:4px"><li>Copy and prices match the line sheet (Rev. B)</li><li>QR resolves to live campaign page</li><li>Colors approved on hard proof, not screen</li><li>Overs shipped to DC for damaged-in-transit</li></ul></div>
+  </div>
+</div>
+
+<div class="ft">
+  <div><small>Designer</small>Kate Chang</div>
+  <div><small>Proof</small>Hard proof + PDF</div>
+  <div><small>Ship to</small>DC, kitted by store</div>
+  <div><small>Files due</small>Dec 16, 2026</div>
+  <div><small>Approval</small><span class="stamp">APPROVED FOR PRINT</span></div>
+</div>
+</body></html>

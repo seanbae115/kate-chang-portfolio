@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="400" height="600"><defs><pattern id="stripe" width="200" height="26" patternUnits="userSpaceOnUse">
+<rect width="200" height="26" fill="#C4572E"/><rect y="17" width="200" height="9" fill="#EFE3D3"/></pattern></defs>
+<path d="M74 56 L126 56 L148 270 Q100 277 52 270 Z" fill="url(#stripe)" stroke="#241A1E" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M74 40 L126 40 L126 56 L74 56 Z" fill="#C4572E" stroke="#241A1E" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M76 44.5 L124 44.5" stroke="#EFE3D3" stroke-width=".85" stroke-dasharray="3 2.4" fill="none"/>
+<path d="M120 58 L121 92" stroke="#241A1E" stroke-width="1.1" fill="none"/>
+<path d="M55 264.5 Q100 271 145 264.5" stroke="#241A1E" stroke-width=".85" stroke-dasharray="3 2.4" fill="none" opacity=".7"/>
+<path d="M90 90 L82 262" stroke="#241A1E" stroke-width=".9" opacity=".3" fill="none"/>
+<path d="M110 90 L119 262" stroke="#241A1E" stroke-width=".9" opacity=".3" fill="none"/>
+</svg>

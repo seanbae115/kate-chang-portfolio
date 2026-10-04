@@ -1,0 +1,8 @@
+/* Juniper Lane brand tokens (fictional plus-size fashion retailer) */
+:root{--plum:#4A2C3D;--terra:#C4572E;--sand:#F3E6D8;--sage:#8A9A7B;--blush:#E9B8A6;--ink:#2B2024;--cream:#FBF7F2;--muted:#7A6A70;--line:#E6DACD;--gold:#D9A441}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Calibri,"Segoe UI",Arial,sans-serif;color:var(--ink);overflow:hidden;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.serif{font-family:Georgia,"Times New Roman",serif}
+.jl{font-family:Georgia,serif;font-weight:700;letter-spacing:.02em}
+.jl i{font-style:italic;font-weight:400}
+.k{font-weight:700;letter-spacing:.18em;text-transform:uppercase}

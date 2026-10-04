@@ -1,0 +1,6 @@
+# Old versions and working files: not part of the published site
+_archive_v1/
+_test*
+*.py
+work/deck/build_deck.js
+__pycache__/
