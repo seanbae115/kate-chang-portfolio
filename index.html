@@ -168,7 +168,9 @@ header nav a:hover{background:var(--sheet)}
 .about .mail-form .form-note.err{color:var(--m)}
 .nav-cta{background:var(--ink);color:var(--sheet)!important}
 .nav-cta:hover{background:#333!important}
-@media(max-width:620px){header nav a[href="#about"]{display:none}}
+@media(max-width:620px){header.top .wrap{gap:12px}.name{font-size:17px;white-space:nowrap;flex-shrink:0}header nav{gap:0}header nav a{font-size:13px;padding:6px 7px}}
+@media(max-width:380px){header nav a{font-size:12.5px;padding:6px 5px}}
+@media(max-width:340px){.name{font-size:15px}header nav a{font-size:12px;padding:6px 4px}}
 footer{padding:28px 0 50px;border-top:1px solid var(--rule)}
 footer .wrap{display:flex;gap:20px;flex-wrap:wrap;align-items:center}
 
@@ -214,6 +216,20 @@ dialog.sheet[open]{animation:rise .45s cubic-bezier(.2,.7,.2,1)}
   .sheet-nav .lbl{display:none}
 }
 body.locked{overflow:hidden}
+/* Mobile: tighter vertical rhythm */
+@media(max-width:620px){
+  .hero{padding:40px 0 36px}
+  .hero-foot{margin-top:28px}
+  .work{padding:64px 0 56px}
+  .schedule{margin:20px 0 24px}
+  .proof{padding:28px 0;gap:20px}
+  .rp-stage{margin-top:12px}
+  .rp-open{margin-top:16px}
+  #about{padding:56px 0 40px}
+  .about{gap:20px}
+  #contact{padding:56px 0 64px}
+  footer{padding:20px 0 36px}
+}
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
   .js .hero h1 .w,.js .hero-foot,.js .slug,.js .rp-info>*,.js .rp-art{opacity:1!important;transform:none!important}
